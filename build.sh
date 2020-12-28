@@ -1,6 +1,6 @@
 #!/bin/bash -ue
 
-archive=maps.tar.gz
+archive=${OUTPUT:-dist/maps.tar.gz}
 
 tmp_dir=$(mktemp -d)
 echo using temporary folder: $tmp_dir >&2
@@ -14,5 +14,6 @@ for dir in */; do
     rsync -a $dir $tmp_dir --exclude 'README*'
 done
 
-tar -C $tmp_dir -czf $archive .
-echo created $archive $(du -kh $archive | cut -f1) >&2
+mkdir -p "$(dirname ${archive})"
+tar -C $tmp_dir -czf "${archive}" .
+echo created "${archive}" $(du -kh "${archive}" | cut -f1) >&2
