@@ -13,7 +13,7 @@ jobs:
       - name: Package maps
         run: ./build.sh
 
-      - name: Upload a Build Artifact
+      - name: Upload maps
         uses: actions/upload-artifact@v2.2.1
         with:
-          path: maps.tar.gz
+          path: dist/
