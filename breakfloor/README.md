@@ -1,10 +1,14 @@
 # breakfloor
 
-author: zymex
+breakfloor (c) by zymex
 
-license: http://creativecommons.org/licenses/by-nc-nd/4.0/
+breakfloor is licensed under a
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
 
-source: https://gamebanana.com/maps/9496
+You should have received a copy of the license along with this
+work. If not, see <http://creativecommons.org/licenses/by-nc-nd/4.0/>.
+
+Downloaded from https://gamebanana.com/maps/9496 on 2020-12-23
 
 # README.txt
 ```
