@@ -2,7 +2,7 @@
 
 author: [sT]Unstoppablels
 
-license: https://creativecommons.org/licenses/by-nc-nd/4.0/
+license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 source: https://www.17buddies.rocks/17b2/View/Map/10329/glasstrap_final.html on 2020-12-23
 
