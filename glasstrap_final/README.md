@@ -1,10 +1,14 @@
 # glasstrap_final
 
-author: [sT]Unstoppablels
+glasstrap_final (c) by [sT]Unstoppablels
 
-license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+glasstrap_final is licensed under a
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
-source: https://www.17buddies.rocks/17b2/View/Map/10329/glasstrap_final.html on 2020-12-23
+You should have received a copy of the license along with this
+work. If not, see <http://creativecommons.org/licenses/by-nc-sa/4.0/>.
+
+Downloaded from https://www.17buddies.rocks/17b2/View/Map/10329/glasstrap_final.html on 2020-12-23
 
 ## README.txt
 ```

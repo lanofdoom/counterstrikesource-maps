@@ -1,10 +1,14 @@
 # fy_iceworld_cssource
 
-author: Mr.Stealth
+fy_iceworld_cssource (c) by Mr.Stealth
 
-license: https://creativecommons.org/licenses/by-nc-nd/4.0/
+fy_iceworld_cssource is licensed under a
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
 
-source: https://gamebanana.com/maps/3694 on 2020-12-23
+You should have received a copy of the license along with this
+work. If not, see <http://creativecommons.org/licenses/by-nc-nd/4.0/>.
+
+Downloaded from https://gamebanana.com/maps/3694 on 2020-12-23
 
 ## README.txt
 ```
