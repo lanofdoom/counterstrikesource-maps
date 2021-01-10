@@ -18,6 +18,14 @@ for dir in */; do
     rsync -a $dir $downloadurl_tmp_dir --exclude 'README.md' --exclude 'LICENSE'
 done
 
+# Generate script with list of commands to bzip2 the maps data for tarball
+pushd $downloadurl_tmp_dir
+echo "#!/bin/bash -ue" > $archive_tmp_dir/make_bz2_files.sh
+find . -type f -exec echo "bzip2 -k {}" \; > $archive_tmp_dir/make_bz2_files.sh
+chmod +x $archive_tmp_dir/make_bz2_files.sh
+popd
+
+# bzip2 compress the downloadurl files for the HTTP mirror
 find $downloadurl_tmp_dir -type f -exec bzip2 {} +
 
 # Package tarball for server
