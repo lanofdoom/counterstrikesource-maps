@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "custommaterials/elevatorpanel"
+    "$surfaceprop" "metal"
+}

@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "custommaterials/backdoor_floor"
+    "$surfaceprop" "concrete"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[.4 .4 .4]"
+}

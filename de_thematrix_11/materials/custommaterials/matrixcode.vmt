@@ -1,0 +1,13 @@
+"unlitgeneric"
+ {
+  "$baseTexture" "custommaterials/matrixcode"
+  "Proxies" 
+       { 
+         "AnimatedTexture" 
+         { 
+            "animatedTextureVar" "$basetexture" 
+            "animatedTextureFrameNumVar" "$frame" 
+            "animatedTextureFrameRate" "12" 
+         }
+    } 
+ }

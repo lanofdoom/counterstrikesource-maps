@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "custommaterials/lobbytiles"
+    "$surfaceprop" "concrete"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[.2 .2 .2]"
+    "$envmapcontrast" 0.7
+}
