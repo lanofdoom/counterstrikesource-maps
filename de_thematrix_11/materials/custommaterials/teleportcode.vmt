@@ -1,0 +1,16 @@
+"LightMappedGeneric"
+ {
+  "$baseTexture" "custommaterials/teleportcode"
+  "$translucent" 1
+  "$nocull" 1
+  "$decal" 0
+  "Proxies" 
+       { 
+         "AnimatedTexture" 
+         { 
+            "animatedTextureVar" "$basetexture" 
+            "animatedTextureFrameNumVar" "$frame" 
+            "animatedTextureFrameRate" "6" 
+         }
+    } 
+ }

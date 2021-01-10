@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "custommaterials/elebutton_off"
+    "$surfaceprop" "metal"
+}
