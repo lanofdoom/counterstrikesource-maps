@@ -16,8 +16,8 @@ If setting ``sv_downloadurl``, you are also required to set ``sv_allowdownload 1
 * aim_ag_texture_city
 * breakfloor
 * cs_747_css
-* css_crackhouse
-* css_siege_2010
+* cs_crackhouse
+* cs_siege_2010
 * de_thematrix_11
 * de_westworld
 * fun_allinone_css_v2
