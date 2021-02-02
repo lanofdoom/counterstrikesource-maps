@@ -6,7 +6,7 @@
   * ``sv_downloadurl``: https://lanofdoom.github.io/counterstrikesource-maps/releases/nightly/cstrike
 
 ## Installation
-Extract ``maps.tar.gz`` into your server's ``css/cstrike`` directory.
+Extract ``maps.tar.xz`` into your server's ``css/cstrike`` directory.
 
 Optionally, consider pointing your server's ``sv_downloadurl`` using the value corresponding with the version you've downloaded. This significant speeds up client map downloads and saves bandwidth on your server by leveraging GitHub's CDN for map downloads.
 
