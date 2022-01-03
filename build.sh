@@ -40,5 +40,5 @@ cp -r $downloadurl_tmp_dir/* downloadurl/
 echo created downloadurl
 
 mkdir -p "$(dirname ${archive})"
-tar -C $archive_tmp_dir -Jcvf "${archive}" .
+XZ_OPT=-9 tar -C $archive_tmp_dir -Jcvf "${archive}" .
 echo created "${archive}" $(du -kh "${archive}" | cut -f1) >&2
