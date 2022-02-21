@@ -21,7 +21,7 @@ done
 # Generate script with list of commands to bzip2 the maps data for tarball
 pushd $downloadurl_tmp_dir
 echo "#!/bin/bash -ue" > $archive_tmp_dir/make_bz2_files.sh
-find . -type f -exec echo "bzip2 -k {}" \; > $archive_tmp_dir/make_bz2_files.sh
+find . -type f -exec echo "bzip2 -k '{}'" \; > $archive_tmp_dir/make_bz2_files.sh
 chmod +x $archive_tmp_dir/make_bz2_files.sh
 popd
 
