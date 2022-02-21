@@ -1,5 +1,0 @@
-"LightmappedGeneric"
-{
-    "$basetexture" "custommaterials/detector_lights"
-    "$surfaceprop" "metal"
-}
