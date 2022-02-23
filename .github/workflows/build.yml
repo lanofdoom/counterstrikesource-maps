@@ -13,12 +13,7 @@ jobs:
       - name: Package maps
         run: ./build.sh
 
-      - name: Upload maps
-        uses: actions/upload-artifact@v2.2.1
-        with:
-          path: dist/
-
-      - name: Deploy tarball
+      - name: Deploy tarballs
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,6 +1,7 @@
 #!/bin/bash -ue
 
 archive=${OUTPUT:-dist/maps.tar.xz}
+bz2_archive=${OUTPUT:-dist/maps_bz2.tar.xz}
 
 archive_tmp_dir=$(mktemp -d)
 downloadurl_tmp_dir=$(mktemp -d)
@@ -31,8 +32,6 @@ find $downloadurl_tmp_dir -type f -exec bzip2 {} +
 # Package tarball for server
 for dir in */; do
     rsync -a $dir $archive_tmp_dir --exclude 'README.md' --exclude 'LICENSE'
-    cp $dir/README.md $archive_tmp_dir/${dir%/}_readme.md
-    cp $dir/LICENSE $archive_tmp_dir/${dir%/}_license
 done
 
 mkdir -p downloadurl
@@ -41,4 +40,5 @@ echo created downloadurl
 
 mkdir -p "$(dirname ${archive})"
 XZ_OPT=-9 tar -C $archive_tmp_dir -Jcvf "${archive}" .
+XZ_OPT=-9 tar -C $downloadurl_tmp_dir -Jcvf "${bz2_archive}" .
 echo created "${archive}" $(du -kh "${archive}" | cut -f1) >&2
