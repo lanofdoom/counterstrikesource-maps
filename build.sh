@@ -1,7 +1,6 @@
 #!/bin/bash -ue
 
 archive=${OUTPUT:-dist/maps.tar.xz}
-bz2_archive=${OUTPUT:-dist/maps_bz2.tar.xz}
 
 archive_tmp_dir=$(mktemp -d)
 downloadurl_tmp_dir=$(mktemp -d)
@@ -19,13 +18,6 @@ for dir in */; do
     rsync -a $dir $downloadurl_tmp_dir --exclude 'README.md' --exclude 'LICENSE'
 done
 
-# Generate script with list of commands to bzip2 the maps data for tarball
-pushd $downloadurl_tmp_dir
-echo "#!/bin/bash -ue" > $archive_tmp_dir/make_bz2_files.sh
-find . -type f -exec echo "bzip2 -k '{}'" \; > $archive_tmp_dir/make_bz2_files.sh
-chmod +x $archive_tmp_dir/make_bz2_files.sh
-popd
-
 # bzip2 compress the downloadurl files for the HTTP mirror
 find $downloadurl_tmp_dir -type f -exec bzip2 {} +
 
@@ -38,7 +30,8 @@ mkdir -p downloadurl
 cp -r $downloadurl_tmp_dir/* downloadurl/
 echo created downloadurl
 
+cp -r $downloadurl_tmp_dir/* $archive_tmp_dir/
+
 mkdir -p "$(dirname ${archive})"
 XZ_OPT=-9 tar -C $archive_tmp_dir -Jcvf "${archive}" .
-XZ_OPT=-9 tar -C $downloadurl_tmp_dir -Jcvf "${bz2_archive}" .
 echo created "${archive}" $(du -kh "${archive}" | cut -f1) >&2

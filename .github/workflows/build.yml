@@ -13,13 +13,12 @@ jobs:
       - name: Package maps
         run: ./build.sh
 
-      - name: Deploy tarballs
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - name: Collect Artifacts
+        uses: actions/upload-artifact@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
-          TARGET_FOLDER: releases/nightly
+          name: output
+          path: dist/maps.tar.gz
+          retention-days: 5
 
       - name: Deploy downloadurl
         uses: JamesIves/github-pages-deploy-action@3.7.1
