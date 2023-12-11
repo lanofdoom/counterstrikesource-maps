@@ -23,6 +23,6 @@ client map downloads and saves bandwidth on your server by leveraging GitHub’s
 CDN for map downloads.
 
 If setting sv_downloadurl, you are also required to set sv_allowdownload 1 and
-sv_allowupload 1. For older versions fo the map pack you should also run the
+sv_allowupload 1. For older versions of the map pack you should also run the
 make_bz2_files.sh script in the archive in order to create the bz2 versions of
 the map data that are needed in order to use the HTTP mirror.
