@@ -26,4 +26,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: downloadurl
-          TARGET_FOLDER: releases/nightly/cstrike
+          TARGET_FOLDER: nightly/cstrike
