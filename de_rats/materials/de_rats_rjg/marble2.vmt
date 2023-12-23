@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "de_rats_rjg/marble2"
+	"$surfaceprop" "glass"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.2 0.2 0.2]"
+}

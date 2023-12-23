@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "de_rats_rjg/cdback"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.4 0.4 0.4]"
+	"$surfaceprop" "glass"
+}

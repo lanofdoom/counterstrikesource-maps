@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+   	"$basetexture"   "de_rats_rjg/credits"
+   	"$envmap" "env_cubemap"
+   	"$normalmap" "de_rats_rjg/credits_normal"
+   	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.5 .5 .5]"
+	"$surfaceprop" "metal"
+	//credits block by smiddy
+
+}

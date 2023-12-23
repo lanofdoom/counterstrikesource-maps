@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "de_rats_rjg/pipeset_metal"
+	"$surfaceprop" "metal"
+//	"$envmap" "env_cubemap"
+//	"$basealphaenvmapmask" 1
+}

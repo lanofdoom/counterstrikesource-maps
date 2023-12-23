@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "de_rats_rjg/CokeCan"
+	"$bumptexture" "de_rats_rjg/CokeCan_spec"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.2 0.2 0.2]"
+	"$envmapcontrast" 0.25
+	"$envmapsaturation" 0.25
+	"$surfaceprop" "metal"
+}
